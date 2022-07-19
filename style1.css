@@ -91,8 +91,32 @@ footer{
     color: #fff;
 
 }
+.h2{
+    text-align: center;
+}
 button{
  width: 100px; 
  height: 30px;
- background-color: yellow;  
+ background-color: yellow; 
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+   
+
+}
+.footer-link li{
+    margin: 10px;
+}
+@media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+    }
+    .players-cart{
+        grid-template-columns: (2, 1fr);
+
+    }
 }
