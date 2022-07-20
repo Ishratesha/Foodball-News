@@ -16,6 +16,7 @@ font-family: 'Poppins', sans-serif;
      color: #fff;
      height: 60% ;
      width: 100%;
+     overflow: hidden;
  }
  .text-part{
      
@@ -31,7 +32,8 @@ font-family: 'Poppins', sans-serif;
      width: 500px;
      height: 600px;
      margin-top: 80px;
-     padding: 30px;
+     padding: 26px;
+     padding-top: 0;
  }
  .banner-btn{
      width: 187px;
@@ -47,6 +49,7 @@ font-family: 'Poppins', sans-serif;
 .cart-container{
     display: flex;
     padding: 20px;
+    overflow: hidden;
     
     
 }
@@ -58,6 +61,7 @@ font-family: 'Poppins', sans-serif;
     padding: 10px;
     border-radius: 10%;
     position: relative;
+    overflow: hidden;
 }
 ul{
     list-style: none;
@@ -78,7 +82,7 @@ a{
 .cart-match{
     width: 300px;
     height: 242px;
-    border: 2px rgb(95, 82, 82) solid;
+    box-shadow: 2px 2px 2px rgb(95, 82, 82) ;
     margin:  10px;
     border-radius: 25px;
     transform: 1s;
@@ -102,6 +106,9 @@ a{
     align-items: center;
     padding: 10px;
     margin: 4px;
+}
+.flex-img img{
+    margin: 10px;
 }
 h2{
     text-align: center;
