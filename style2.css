@@ -52,8 +52,9 @@ font-family: 'Poppins', sans-serif;
 }
 .link-menu{
     background-color: black;
-     height: 312px;
-     width: 312px;
+     height: 300px;
+     width: 300px;
+     margin: 10px;
     padding: 10px;
     border-radius: 10%;
     position: relative;
@@ -65,21 +66,14 @@ ul{
     justify-content: center;
     
 }
-.link-menu ul li {
-    background-color: white;
-    width: 252px;
-    height: 64px;
-    margin: 10px;
-    border-radius: 25px;
-       
-}
-.link-menu ul li a{
+
+a{
     text-decoration: none;
-    font-size: 26px;
-    padding: 5%;
+    font-size: 20px;
+     padding: 2%;
     text-align: center;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
 }
 .cart-match{
     width: 300px;
@@ -87,6 +81,12 @@ ul{
     border: 2px rgb(95, 82, 82) solid;
     margin:  10px;
     border-radius: 25px;
+    transform: 1s;
+}
+.cart-match:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2 ;
 }
 .match{
     display: grid;
@@ -146,9 +146,7 @@ footer{
         width: 100%;
         
     }
-    .link-menu ul li{
-        
-    }
+    
     .footer-link{
         flex-direction: column;
     }

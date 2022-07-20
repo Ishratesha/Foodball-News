@@ -40,6 +40,14 @@ font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
+    transform: 2s;
+}
+.banner-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2 ;
+    
 }
 .banner-btn i{
     color: rgb(53, 53, 255);
@@ -48,6 +56,7 @@ font-family: 'Poppins', sans-serif;
     display: flex;
     padding:15px;
     width: 100%;
+    
     
 }
 .link-menu{
@@ -66,21 +75,21 @@ ul{
     justify-content: center;
     
 }
-.link-menu ul li {
+ .link-menu ul li {
     background-color: white;
     width: 252px;
     height: 64px;
     margin: 10px;
     border-radius: 25px;
        
-}
-.link-menu ul li a{
+} 
+ a{
     text-decoration: none;
-    font-size: 26px;
-    padding: 5px;
+    font-size: 20px;
+     padding: 2%;
     text-align: center;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
 }
 .players-cart{
     margin: 30px;
@@ -93,15 +102,25 @@ ul{
 }
 
 .cart{
-    width: 312px;
+    width: 299px;
     height: 362px;
   border-radius: 5px;
   border: gray 2px solid;
+  margin: 10px;
+  transition: 1s;
   
 }
+
 .cart-img{
-    width: 312px;
+    width: 296px;
     
+}
+.two-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 7px;
+    padding: 3px;
 }
 footer{
     background-color: black;
@@ -109,9 +128,9 @@ footer{
     width: 100%;
 
 }
-.h2{
+h3{
     text-align: center;
-    font-size: 12px;
+    
 }
 
 
@@ -155,9 +174,7 @@ footer{
     .cart{
         width: 100%;
     }
-    .link-menu ul li{
-        
-    }
+   
     .footer-link{
         flex-direction: column;
     }
