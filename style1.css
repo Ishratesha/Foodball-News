@@ -9,18 +9,21 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
 .container{
-    background: black;
+   width: 100%;
+   background-image: url(./assets/gradient-abstract-football-background_52683-66767.webp);
+   background-size: cover;
     display: flex;
     color: #fff;
     height: 60% ;
+    width: 100%;
 }
 .text-part{
     
     padding: 10%;
-    width: px;
+    
 }
 .text-part h1{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
     padding: 5px;
 }
@@ -28,18 +31,30 @@ font-family: 'Poppins', sans-serif;
     width: 50%;
     height: 60%;
     margin-top: 80px;
-    padding-right: 30px;
+    padding-right: 9%;
+}
+.banner-btn{
+    width: 187px;
+    height: 57px;
+    margin: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner-btn i{
+    color: rgb(53, 53, 255);
 }
 .cart-container{
     display: flex;
-    
-    margin: 20px;
+    padding:15px;
+    width: 100%;
     
 }
 .link-menu{
     background-color: black;
-     height: 312px;
+         height: 312px;
      width: 312px;
+     margin: 10px;
     padding: 10px;
     border-radius: 10%;
     position: relative;
@@ -62,18 +77,19 @@ ul{
 .link-menu ul li a{
     text-decoration: none;
     font-size: 26px;
-    padding: 5%;
+    padding: 5px;
     text-align: center;
     color: black;
     font-weight: 600;
 }
 .players-cart{
-    margin: 10px;
+    margin: 30px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cart{
@@ -81,10 +97,11 @@ ul{
     height: 362px;
   border-radius: 5px;
   border: gray 2px solid;
+  
 }
 .cart-img{
     width: 312px;
-    padding: 2px;
+    
 }
 footer{
     background-color: black;
@@ -94,12 +111,9 @@ footer{
 }
 .h2{
     text-align: center;
+    font-size: 12px;
 }
-button{
- width: 100px; 
- height: 30px;
- background-color: yellow; 
-}
+
 
 .footer-link{
     display: flex;
@@ -108,6 +122,11 @@ button{
     margin: 20px;
    
 
+}
+.footer-link i{
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .footer-link li{
     margin: 10px;
@@ -120,47 +139,50 @@ button{
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)  {
-    .container{
-        flex-direction: column;
-    }
-    .link-menu{
-        flex-direction: column;
-    }
-    .cart-container{
-        grid-template-columns: (1, 1fr);
-
-    }
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px)  {
     .players-cart{
         grid-template-columns: repeat(1,1fr);
     }
-    
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .match{
-        grid-template-columns: repeat(1,1fr);
-    }
     .cart-container{
         flex-direction: column;
     }
     .container{
         flex-direction: column;
+        width: 100%;
+        
     }
-    .link-menu{
-        display: flex;
+    .cart{
+        width: 100%;
     }
-
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .cart-container{
-        grid-template-columns: repeat(2,1fr);
+    .link-menu ul li{
+        
     }
-    .link-menu{
+    .footer-link{
         flex-direction: column;
     }
+}
+/* Extra small devices (phones, 600px and down) */
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .players-cart{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cart-container{
+        flex-direction: column;
+    }
+    .link-menu {
+        flex-direction: row;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

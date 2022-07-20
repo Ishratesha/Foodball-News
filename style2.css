@@ -9,27 +9,41 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
 .container{
-    background: black;
-    display: flex;
-    color: #fff;
-    height: 60% ;
-}
-.text-part{
-    
-    padding: 10%;
-    width: px;
-}
-.text-part h1{
-    font-size: 40px;
-    font-weight: 600;
-    padding: 5px;
-}
-.container img{
-    width: 50%;
-    height: 60%;
-    margin-top: 80px;
-    padding-right: 30px;
-}
+    width: 100%;
+    background-image: url(./assets/gradient-abstract-football-background_52683-66767.webp);
+    background-size: cover;
+     display: flex;
+     color: #fff;
+     height: 60% ;
+     width: 100%;
+ }
+ .text-part{
+     
+     padding: 10%;
+     
+ }
+ .text-part h1{
+     font-size: 60px;
+     font-weight: 600;
+     padding: 5px;
+ }
+ .container img{
+     width: 500px;
+     height: 600px;
+     margin-top: 80px;
+     padding: 30px;
+ }
+ .banner-btn{
+     width: 187px;
+     height: 57px;
+     margin: 7px;
+     border-radius: 5px;
+     font-size: 20px;
+     font-weight: 500;
+ }
+ .banner-btn i{
+     color: rgb(53, 53, 255);
+ }
 .cart-container{
     display: flex;
     padding: 20px;
@@ -96,8 +110,31 @@ h4{
     text-align: center;
     color: grey;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+footer{
+    background: black;
+    color:#fff;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+   
+
+}
+.footer-link li{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerli{
+    text-align: center;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width:480px) {
     .match{
         grid-template-columns: repeat(1,1fr);
     }
@@ -106,21 +143,46 @@ h4{
     }
     .container{
         flex-direction: column;
+        width: 100%;
+        
     }
-    .link-menu{
-        display: flex;
+    .link-menu ul li{
+        
+    }
+    .footer-link{
+        flex-direction: column;
     }
 
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .match{
+/* @media only screen and (min-width: 768px) { 
+    */
+    @media only screen and (min-width: 481px) and (max-width:768px){
+    
+
+        .match{
         grid-template-columns: repeat(2,1fr);
     }
+    .cart-container{
+        flex-direction: column;
+    }
+    .link-menu {
+        flex-direction: row;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) { */
+    @media only screen and (min-width: 768px) {
     .match{
         grid-template-columns: repeat(3,1fr);
+    }
+    .footer-link{
+        display: flex;
     }
 }
