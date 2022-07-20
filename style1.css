@@ -89,6 +89,7 @@ ul{
 footer{
     background-color: black;
     color: #fff;
+    width: 100%;
 
 }
 .h2{
@@ -110,13 +111,60 @@ button{
 }
 .footer-link li{
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width: 576px) {
+.footerli{
+    text-align: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
     .container{
         flex-direction: column;
     }
-    .players-cart{
-        grid-template-columns: (2, 1fr);
+    .link-menu{
+        flex-direction: column;
+    }
+    .cart-container{
+        grid-template-columns: (1, 1fr);
 
+    }
+    .players-cart{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .match{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cart-container{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .link-menu{
+        display: flex;
+    }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cart-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .link-menu{
+        flex-direction: column;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cart-container{
+        grid-template-columns: repeat(3,1fr);
     }
 }

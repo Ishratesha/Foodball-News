@@ -32,8 +32,8 @@ font-family: 'Poppins', sans-serif;
 }
 .cart-container{
     display: flex;
+    padding: 20px;
     
-    margin: 20px;
     
 }
 .link-menu{
@@ -66,4 +66,61 @@ ul{
     text-align: center;
     color: black;
     font-weight: 600;
+}
+.cart-match{
+    width: 300px;
+    height: 242px;
+    border: 2px rgb(95, 82, 82) solid;
+    margin:  10px;
+    border-radius: 25px;
+}
+.match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px ;
+    padding: 10px;
+    
+
+}
+.flex-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 4px;
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: grey;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .match{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cart-container{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .link-menu{
+        display: flex;
+    }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .match{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .match{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
