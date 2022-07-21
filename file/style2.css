@@ -10,7 +10,7 @@ font-family: 'Poppins', sans-serif;
 }
 .container{
     width: 100%;
-    background-image: url(./assets/gradient-abstract-football-background_52683-66767.webp);
+    background-image: url(../assets/gradient-abstract-football-background_52683-66767.webp);
     background-size: cover;
      display: flex;
      color: #fff;
