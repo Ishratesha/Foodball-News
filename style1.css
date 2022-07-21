@@ -124,6 +124,20 @@ button{
     border-radius: 5px;
     border: 1px gray;
     margin: 2px;
+    
+}
+.hide-btn{
+    width: 187px;
+    height: 57px;
+    margin: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgb(91, 91, 238);
+    color: #fff;
+    
+
 }
 .two-icons{
     display: flex;
@@ -213,6 +227,9 @@ h3{
         width: 100%;
         
     }
+    .hide-btn{
+        visibility: visible;
+    }
     
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -220,4 +237,7 @@ h3{
     .cart-container{
         grid-template-columns: repeat(3,1fr);
     }
+   .hide-btn{
+    visibility: hidden;
+   }
 }
